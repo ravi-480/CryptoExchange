@@ -1,0 +1,79 @@
+.learning-center {
+    padding: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #b7c6d4;
+    margin-top: 15px;
+  }
+  
+  .article-card, .glossary-card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(84,3,255,0.15);
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .article-title, .video-title, .glossary-term {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #007bff;
+  }
+  
+  .article-card .card-body, .glossary-card .card-body {
+    padding: 1.5rem;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .video-card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .video-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 0.5rem;
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      text-align: center;
+    }
+  
+    .article-card, .video-card, .glossary-card {
+      margin-bottom: 1.5rem;
+    }
+  }
+  
